@@ -13,5 +13,4 @@ echo "<script> alert('Successfully Submitted,our team will be get back to you')<
 else {
     echo "<center>internal server error </center>";
 }
-
 ?>
