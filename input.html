@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <body>
+        <div class="container">
+            <div>
+                <h1>Enter Recipe Details</h1>
+            </div>
+            <form action="./resources/upload.php" method="post" enctype="multipart/form-data">
+                Select image to upload:
+                <div>
+                    <label for="rname">Recipe Name</label>
+                    <input type="text" name="rname" required>
+                </div>
+
+                <div>
+                    <label for="rtype">Recipe Type:</label>
+
+                    <select name="rtype">
+                        <option value="non-veg">Non-Veg</option>
+                        <option value="veg">Veg</option>
+                    </select>
+                </div>
+<div>
+    <textarea name="ingredients"  cols="30" rows="10" placeholder="Enter steps to make this recipe ,also make sure u put a ',' after every step"></textarea>
+</div>
+                <div> <input type="file" name="fileToUpload" id="fileToUpload"></div>
+                <div><input type="submit" value="Upload Image" name="submit"></div>
+
+            </form>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>

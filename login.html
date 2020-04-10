@@ -1,0 +1,42 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+
+<body>
+
+  <form action="index.html" class="inline">
+    <button class="float-left btn btn-primary back" style="position: absolute;left:10px;">Back</button>
+  </form>
+
+  <div class="login-container" style="box-shadow: 0 0 1rem rgba(0, 0, 0, .5); ">
+    <form action="./assets/resources/login.php" method="POST">
+      <div>
+        <h1>Member Login</h1>
+      </div>
+      <div>
+        <label for="name">Username</label>
+        <input type="text" id="name" name="username" required>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <p>Forgot <a href="#">Your Password?</a></p>
+      </div>
+      <div>
+        <button type="submit">Login</button>
+      </div>
+    </form>
+  </div>
+  <!--Login-container-->
+  <div class="signup">
+    <p>Don't have an account? <a href="signup.html">Sign Up</a> &mdash; we won't bite :)</p>
+  </div>
+
+  <script src="script/jquery-1.8.1.min.js" type="text/javascript"></script>
+</body>
+
+</html>
