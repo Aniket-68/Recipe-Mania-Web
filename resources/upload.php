@@ -42,8 +42,11 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         $file="assets/img/contents/".basename( $_FILES["fileToUpload"]["name"]);
         // echo "The file". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-        $conn->query("insert into recipes values('','$Rname','$Rtype','$file')");
-        $conn->query("insert into ingredients values('','$ingredients')");
+        if (($conn->query("insert into recipes values('','$Rname','$Rtype','$file')")) && ($conn->query("insert into ingredients values('','$ingredients')")) )
+        {
+            echo "<script> alert('Successfully Submitted')</script>" ;
+        }
+        
 
     } else {
         echo "Sorry, there was an error uploading your file.";
