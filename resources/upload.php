@@ -2,7 +2,11 @@
 include('db.php');
 $Rname = $_POST['rname'];
 $Rtype = $_POST['rtype'];
+$Rcate=$_POST['rcate'];
 $ingredients=$_POST['ingredients'];
+echo $ingredients;
+// $ingredients=$_GET['ingredients'];
+$steps=$_POST['steps'];
 $target_dir = "../assets/img/contents/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
@@ -42,7 +46,7 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         $file="assets/img/contents/".basename( $_FILES["fileToUpload"]["name"]);
         // echo "The file". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-        if (($conn->query("insert into recipes values('','$Rname','$Rtype','$file')")) && ($conn->query("insert into ingredients values('','$ingredients')")) )
+        if (($conn->query("insert into recipes values('','$Rname','$Rtype','$file','$Rcate')")) && ($conn->query("insert into recipesprep values ('','$ingredients','$steps')")) )
         {
             echo "<script> alert('Successfully Submitted')</script>" ;
         }

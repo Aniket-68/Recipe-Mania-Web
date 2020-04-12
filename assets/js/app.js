@@ -6,6 +6,7 @@ function abc(){
     xhr.onreadystatechange= function (){
         if (this.readyState==4 & this.status==200){
             array=JSON.parse(this.responseText);
+            console.log(array);
             createRec(array);
         }   
     }
@@ -14,11 +15,21 @@ xhr.send();
 
 
 function createRec (data){
+    console.log(data);
     parent =document.getElementById("rec");
     for (i=0;i<data.length;i++){
         var newDiv=document.createElement("div");
         newDiv.setAttribute("class","card col-md-3 col-sm-12");
         newDiv.setAttribute("id",data[i].recipeid);
+        if((data[i].type)=="non-veg")
+        {
+       console.log("Non-veg");
+        }
+        else if((data[i].type)=="veg")
+        {
+         console.log("Veg");   
+        }
+        console.log(data[i].type); 
         var newcontent=document.createElement("div");
         newcontent.innerHTML=data[i].recipename;
         newcontent.setAttribute('class',"recipe-name")
@@ -41,22 +52,22 @@ function fetch(ele){
         if (this.readyState==4 & this.status==200){
             console.log(this.responseText);
             var data=JSON.parse(this.responseText);
+            console.log(data);
             expand(data[1],ele);
         }   
     }
 ch.send();
-
-
 }
 
 function expand(data,ele){
     string =data.split(",");
-    alert(string);
+    // alert(string);   
     for(i=0;i<string.length;i++){
-        // x = document.createElement("li");
-        // x.innerHTML=string[i];
-        // ele.appendChild(x)
-        // console.log(x.innerHTML);
+        x = document.createElement("li");
+        x.innerHTML=string[i];
+        ele.appendChild(x);
+        console.log(x.innerHTML);
+        // parent.appendChild(ele);
         // console.log(ele)
         
         
