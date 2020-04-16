@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/css/create_recipe_client.css">
+</head>
+<body>
+
+    <!--Main container-->
+<div class="container">
+    <!--Header-->
+    <div class="title">
+      Upload Your Delecious Recipe
+    </div>
+    <div class="form">
+      
+        <!--Recipe name and input-->
+    <div>
+        <div class="inputfield">  
+          <label ><strong>Recipe name :</strong></label>
+        <!--</div>
+        <div class="inputfield">-->
+          <input type="text" class="input">
+       </div>  
+    </div>
+       
+    <!--Recipe type and select input-->
+        <div class="inputfield">
+          <label><strong>Recipe type :</strong></label>
+          <div class="custom_select">
+            <select>
+              <option value="0">Select</option>
+              <option value="1">Veg</option>
+              <option value="2">Non-veg</option>
+            </select>
+          </div>
+       </div> 
+
+       <!--Recipe category and input-->
+       <div class="inputfield">
+        <label><strong>Recipe Category :</strong></label>
+        <div class="custom_select">
+          <select>
+            <option value="0">Select</option>
+            <option value="1">Breakfast</option>
+            <option value="2">Fastfood</option>
+            <option value="3">Main course</option>
+            <option value="4">Starter</option>
+            <option value="4">Rice and Noodels</option>
+            <option value="4">Soup</option>
+
+          </select>
+        </div>
+     </div> 
+
+<div>
+    
+    <!--Ingredient container different class-->
+    <div class="ingredient-container">       
+        <div>  
+            <label style="color: #757575;"><strong>Ingredients :</strong></label> 
+            <span>
+             <button class="button" onclick="myfunction()">Add</button>
+             <input type="text"  id="Blockbtn" name="Blockbtn" class="input"  placeholder=" Add ingredients">   
+             <ul id="myblock">
+    
+             </ul>
+            </span>
+        </div>     
+    </div>
+
+    <!--Steps and dropdown todo list-->
+        <div id="myDIV" class="inputfield">
+         <label><strong>Steps :</strong></label>
+         <input type="text" class="input" id="myInput" placeholder="Steps">
+         <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+  
+       <ul id="myUL">
+    
+       </ul> 
+         
+    </div> 
+
+    
+    <!--Description and input-->
+       <div class="inputfield">
+        <label style="padding-top: 5px;"><strong>Description :</strong></label>
+     
+        <input  class="input"></input>
+     </div> 
+
+     <!--choose file for uploading-->
+     <div class="inputfield">
+         <label><strong>Recipe image :</strong></label>
+        <input type="file" class="input" name="filename">
+        
+        </div>
+
+        <!--preperation time input-->
+        <div class="inputfield">
+            <label><strong>Preperation time :</strong></label>
+             <input placeholder="Hr" type="number" min="0" max="5" style="width:4.2rem; margin-right: 2px; outline: none; border: 1.5px solid crimson; height: 2rem;">
+             
+             <span>
+            <input placeholder="Mins" type="number" min="0" max="59" style="width:4.2rem; outline: none; border: 1.5px solid crimson; height: 2rem;">
+            
+            </span>
+        </div>
+        
+        <!--check box -->
+        <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p style="margin-bottom: 5px;">Agreed to terms and conditions</p>
+        </div> 
+
+        <!--final uploaad button-->
+      <div class="inputfield">
+        <input type="submit" value="Upload" class="btn">
+      </div>
+
+    </div>
+</div>	
+    
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
+
+<script src="./assets/js/create_recipe_client.js"></script>
+
+</body>
+</html>
