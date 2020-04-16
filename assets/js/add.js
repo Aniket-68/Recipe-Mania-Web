@@ -1,7 +1,9 @@
 array =[];
 array2=[];
 
-  // Create a "close" button and append it to each list item
+
+
+
   var myNodelist = document.getElementsByTagName("LI");
   var i;
   for (i = 0; i < myNodelist.length; i++) {
@@ -41,8 +43,8 @@ array2=[];
       alert("You must write something!");
     } else {
       document.getElementById("myUL").appendChild(li);
-    inputValue=inputValue.trim(); 
-      array2.push(inputValue.tolowerCase());
+    inputValue=inputValue; 
+      array2.push(inputValue.toLowerCase());
     }
     document.getElementById("myInput").value = "";
   
@@ -59,6 +61,7 @@ array2=[];
       }
     }
   }
+  
   function hello() {
     abc();
   }

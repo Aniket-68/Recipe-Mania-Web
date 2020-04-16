@@ -12,18 +12,18 @@
   integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="index.css">  
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/index.css">  
  
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
 </head>
 
 <body>
   <header>
 
 <!-- NAVABAR START -->
-    <div class="nav-wrapper" >
+    <div class="nav-wrapper">
 
       <!-- Veg or Nonveg slider in navbar -->
       <div class="center">
@@ -92,48 +92,49 @@
     
       <div class="item">
         <img src="recipe3.jpg" alt="New york" style="width:100%;">
-        </div>
       </div>
-
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
+</div>
 
-  <!-- CAROUSEL END -->
+<!-- CAROUSEL END -->
 
 
-  <!-- SEARCH BAR START -->
-    <div class="container-search">
-      <h3>What would you like to cook?</h3>
-      <form>
-          <input type="search" placeholder="Search">
-      </form>
+<!-- SEARCH BAR START -->
+  <div class="container-search">
+    <h3>What would you like to cook?</h3>
+    <form>
+        <input type="search" placeholder="Search">
+    </form>
 
-      <h4>Popular Searches</h4>
-      <p class="pop-search"><a href="#"><button type="button">Chicken kadai</button></a></p>
-      <p class="pop-search"><a href="#"><button type="button">pav bhaji</button></a></p> <br>
-      <p class="pop-search"><a href="#"><button type="button">dum biryani</button></a></p>
-      <p class="pop-search"><a href="#"><button type="button">misal pav</button></a></p>
-      <p class="pop-search"><a href="#"><button type="button">ginger tea</button></a></p>
-      </div>        
+    <h4>Popular Searches</h4>
+    <p class="pop-search"><a href="#"><button type="button">Chicken kadai</button></a></p>
+    <p class="pop-search"><a href="#"><button type="button">pav bhaji</button></a></p> <br>
+    <p class="pop-search"><a href="#"><button type="button">dum biryani</button></a></p>
+    <p class="pop-search"><a href="#"><button type="button">misal pav</button></a></p>
+    <p class="pop-search"><a href="#"><button type="button">ginger tea</button></a></p>
+    </div>        
 
-  <!-- SEARCH BAR END -->
-  <Section id="recipes">
-    <h1>Taste Of The Month...</h1>
+<!-- SEARCH BAR END -->
+<div>
+  <h1>Taste Of The Month...</h1>
 
-  <!-- GRID SLIDER START -->
-    <div class="scrollmenu" id="rec">
+<!-- GRID SLIDER START -->
+  <div class="scrollmenu" id="rec">
 
-      <!-- Sample card1 start -->
-      <!-- Sample card1 end -->
+    <!-- Sample card1 start -->
+   
+    <!-- Sample card1 end -->
 
     <!-- Sample card2 start -->
     <div class="card1">
@@ -142,91 +143,50 @@
 
       <!-- Modal= VIEW button -->
       <div class="w3-container">
-        <button onclick="document.getElementById('id02').style.display='block'" class="w3-button">VIEW</button>
-        <div id="id02" class="w3-modal">
-          <div class="w3-modal-content">
-            <div class="w3-container">
-              <span onclick="document.getElementById('id02').style.display='none'"
-                class="w3-button w3-display-topright">&times;</span>
-              <img class="img-modal" src="F&B_logo.jpg" alt="receipe1">
-              <h1>Recipe2</h1>
-              <h2>Ingredients</h2>
-              <div class="border2"></div>
-                <ul>
-                  <li>ingredient 1</li>
-                  <li>ingredient 2</li>
-                </ul>
-              <h2>Procedure</h2>  
-              <div class="border2"></div>
-              <ol>
-                <li><span>01</span><p>some procedure to make your recipe delicious</p></li>
-                <li><span>02</span><p>some procedure to make your recipe delicious</p></li>
-                <li><span>03</span><p>some procedure to make your recipe delicious</p></li>
-              </ol>   
-               
-            </div>
-          </div>
+        <!-- <button onclick="document.getElementById('id02').style.display='block'" class="w3-button">VIEW</button> -->
+         <a class="w3-button" href="#1">view</a>
+         <div class="icon">
+          <img class="icon-img" src="./assets/img/layouts/veg_icon.jpg">
+          <!-- <i style="font-size: 13px;" class="fas fa-heart"></i>      -->
+          <i style="font-size: 13px;" class="fa">&#xf017; 55mins</i>
         </div>
-      </div>
+        </div>
       
       <!-- Icon div for recipe -->
-      <div class="icon">
-        <img class="icon-img" src="veg_icon.jpg">
-        <i style="font-size: 13px;" class="fas fa-heart"></i>     
-        <i style="font-size: 13px;" class="fa">&#xf017; 55mins</i>
-      </div>
+      
+    </div>
+    <div id="1" class="w3-modal2">
+      <!-- <div class=""> -->
+        <div class="w3-modal-content w3-container">
+          <!-- <span onclick="document.getElementById('id02').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span> -->
+          <img class="img-modal" src="F&B_logo.jpg" alt="receipe1">
+          <h1>Recipe2</h1>
+          <h2 class="border2">Ingredients</h2>
+            <ul>
+              <li>ingredient 1</li>
+              <li>ingredient 2</li>
+            </ul>
+          <h2 class="border2">Procedure</h2>  
+          <ol>
+            <li><span>01</span><p>some procedure to make your recipe delicious</p></li>
+            <li><span>02</span><p>some procedure to make your recipe delicious</p></li>
+            <li><span>03</span><p>some procedure to make your recipe delicious</p></li>
+          </ol>   
+          <img class="icon-img1" src="./assets/img/layouts/veg_icon.jpg">
+          <i style="font-size: 20px;" class="fas fa-heart"></i>    
+          <i style="font-size: 20px;" class="fa">&#xf017;</i>   
+          <i>xx min</i>  
+        </div>
+     <!-- // </div> / -->
     </div>
     <!-- Sample card2 end -->
 
-<!-- sample card 9 start -->
-<div class="card">
-  <img src="./assets/img/contents/Achari_Paneer_Tikka.jpg" alt="" class="img-card-slider">
-  <div class="card-body">
-      <h5 class="recipe-name">Chicken Fried Rice</h5>
-      <a href="#41" class="w3-button">View</a>
-  </div>
-  <div class="icon">
-      <img class="icon-img" src="./assets/img/layouts/veg.jpg">
-      <i class="fa" style="font-size: 13px;">&#xf017;</i>
-  </div>
-</div>
-
-
-
-<div id="41" class="modalview" >
-  <div class="w3-container w3-modal-content">       
-      <a class="w3-button w3-display-topright" href="#">&times;</a>
-  <img class="img-modal" src="F&B_logo.jpg" alt="could">
-  <h1 class="recipe-name">Recipe2</h1>
-  <h2>Ingredients</h2>
-  <div class="modal-ing-border"></div>
-  <ul>
-    <li>ingredient 1</li>
-    <li>ingredient 2</li>
-  </ul>
-  <h2>Procedure</h2>  
-  <div class="modal-ing-border"></div>
-  <ol>
-    <li><span>01</span><p>some procedure to make your recipe delicious</p></li>
-    <li><span>02</span><p>some procedure to make your recipe delicious</p></li>
-    <li><span>03</span><p>some procedure to make your recipe delicious</p></li>
-  </ol> 
-  <div class="micon">  
-  <img class="modal-icon-img" src="veg_icon.jpg"> 
-  <!-- <i style="font-size: 20px;" class="fas fa-heart"></i>     -->
- <i style="font-size: 20px;" class="fa">&#xf017;</i> 
-  <i>xx min</i> 
-
-  </div>
-</div>
-</div>
-<!-- sample card 9 end  -->
-</div>
-
-
-
+   
+  <!-- Sample card8 end -->
+</div> 
 <!-- GRID SLIDER END --> 
-<!-- </div> -->  </Section>
+
 <!-- cuisine SLIDER START -->
 
 <div class="scrollmenu">
@@ -505,8 +465,9 @@
   <!-- JAVASCRIPT -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
   <script src="./assets/js/index.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- <script src="index.js"></script> -->
 </body>
 
 </html>

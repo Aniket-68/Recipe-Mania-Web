@@ -60,8 +60,23 @@ ch.send();
 }
 
 function expand(data,ele){
+   arr=[];
+   console.log(data);
     string =data.split(",");
-    // alert(string);   
+    alert(string);
+    // alert(string.length);
+    for(j=0;j<string.length;j++)
+    {
+    // alert(string[j]);
+    arr.push(string[j]);
+    
+    // alert(arr);    
+
+}  
+str=arr;
+console.log (str); 
+
+
     for(i=0;i<string.length;i++){
         x = document.createElement("li");
         x.innerHTML=string[i];

@@ -1,0 +1,160 @@
+.scrollmenu {
+	background-color: white;
+	overflow: auto;
+	white-space: nowrap;
+	padding: 20px;
+  }
+  /* custom card; */
+  .card {                           
+	font-family: 'Times New Roman', Times, serif, sans-serif;
+	font-size: 20px;
+	display: inline-block;
+	color: black;
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	height: 220px;
+  	width: 250px;
+	text-decoration: none;
+	border-style: groove;
+	margin: 15px;
+	border-radius: 20px;
+  }
+
+  .card:hover {
+	background-color: #777777;
+	box-shadow: 5px;
+
+  }
+  .img-card-slider {
+	height: 110px;
+	width: 244px;
+	border-radius: 18px 18px 0 0;
+	transition: transform .2s;
+}  
+
+.img-card-slider:hover {
+	transform: scale(1.2);
+	border-radius: 0;
+}
+
+.recipe-name {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* 20px */
+    font-size: 1.25 rem; 
+	color: black;
+	/* white-space: nowrap; */
+	/* overflow: auto; */
+	text-align: center;
+	margin: 6px 0px;
+}
+
+/* view button css start */
+button.w3-button {
+	border-radius: 20px;
+	/* background: black; */
+	background-color: black;
+	color: white;
+	height: 30px;
+	width: 80px;
+	font-size: 15px;
+	text-align: center;
+    padding: 0;
+    text-decoration: none;
+}
+/* view button css end */
+
+/* icon div  */
+.icon {
+	text-align: left;
+	padding-left: 25px;
+	height: 20px;
+	top: 1px;
+}
+/* icon-img-veg  */
+.icon-img {
+	height: 15px;
+	width: 15px;
+	/* margin-right: 10px; */
+	/* margin-bottom: 8px; */
+}
+.fa {
+	height: 20px;
+	width: 20px;
+	font-size:20px;
+	font-family: sans-serif;
+}
+
+
+.w3-modal-content h1 {
+	font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    text-align:center ;
+}
+.w3-modal-content h2 {
+	text-align: left;
+	margin-left: 15px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.w3-modal-content ul {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 15px;
+	text-align: left;
+	color: black;
+	margin-left: 20px;
+	font-weight: bold;
+}
+.w3-modal-content ul li {
+	margin: 10px 0;
+	height: 25px;
+}
+
+
+.w3-modal-content p {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 15px;
+	text-align: left;
+	color: black;
+	margin-left: 20px;
+}
+
+.w3-modal-content ol {
+	list-style: none;
+	color: #ffcb7d;
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 15px;
+  }
+  
+.w3-modal-content ol li {
+	font: bold 24pt helvetica, arial, sans-serif;
+	position: relative;
+	margin-bottom: 20px;
+  }
+  .w3-modal-content li p {
+	font: 12pt helvetica, arial, sans-serif;
+	color: #555;
+	padding-left: 60px;
+  }
+  .w3-modal-content li span {
+	position: absolute;
+	line-height: 25px;
+  }
+  
+.border2 {
+	height: 3px;
+	width: 40px;
+	background: #ff9800;
+	color: #ff9800;
+	background-color: #ff9800;
+	border: 0px;
+	margin-left: 20px;
+}
+.icon-img1 {
+	height: 25px;
+	width: 25px;
+	/* margin-right: 10px; */
+	/* margin-bottom: 8px; */
+}  

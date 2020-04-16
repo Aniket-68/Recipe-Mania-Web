@@ -7,6 +7,7 @@ $ingredients=$_POST['ingredients'];
 echo $ingredients;
 // $ingredients=$_GET['ingredients'];
 $steps=$_POST['steps'];
+$dura=$_POST['dura'];
 $target_dir = "../assets/img/contents/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
@@ -23,10 +24,10 @@ if(isset($_POST["submit"])) {
     }
 }
 // Check if file already exists
-if (file_exists($target_file)) {
-    echo "Sorry, file already exists.";
-    $uploadOk = 0;
-}
+// if (file_exists($target_file)) {
+//     echo "Sorry, file already exists.";
+//     $uploadOk = 0;
+// }
 // Check file size
 // if ($_FILES["fileToUpload"]["size"] > 500000) {
 //     echo "Sorry, your file is too large.";
@@ -46,9 +47,10 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         $file="assets/img/contents/".basename( $_FILES["fileToUpload"]["name"]);
         // echo "The file". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-        if (($conn->query("insert into recipes values('','$Rname','$Rtype','$file','$Rcate')")) && ($conn->query("insert into recipesprep values ('','$ingredients','$steps')")) )
+        if ($conn->query("insert into recipes values('','$Rname','$Rtype','$file','$Rcate','$ingredients','$steps','$dura')" ));
         {
             echo "<script> alert('Successfully Submitted')</script>" ;
+            header("Location: ../index.html");
         }
         
 
