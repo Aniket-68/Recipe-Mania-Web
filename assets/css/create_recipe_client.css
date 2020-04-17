@@ -3,10 +3,10 @@
 *{
   margin: 0;
   padding: 0;
-  /*box-sizing: border-box;*/
   font-family: 'Montserrat', sans-serif;
 }
 body{
+ 
   background: crimson;
   padding: 0 10px;
 }
@@ -16,8 +16,10 @@ body{
   max-height: max-content;
   background: #fff;
   margin: 20px auto;
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.2);
   padding: 30px;
+  border-radius: 15px;
+  
 }
 
 .container .title{
@@ -34,11 +36,9 @@ body{
 }
 
 .container .form .inputfield{
-  /*margin-bottom: 15px;*/
   display: flex;
   align-items: center;
   box-sizing: border-box;
-
 }
 
 .container .form .inputfield label{
@@ -58,18 +58,12 @@ body{
   border: none;
   border-bottom: 1.5px solid crimson;
   font-size: 15px;
-  /*padding: 8px 10px;*/
   border-radius: 0px;
   transition: all 0.3s ease;
   margin-bottom: 5px;
   
 }
 
-/*.container .form .inputfield .textarea{
-  width: 100%;
-  height: 125px;
-  resize: none;
-}*/
 
 .container .form .inputfield .custom_select{
   position: relative;
@@ -99,16 +93,10 @@ body{
   padding: 8px 10px;
   font-size: 15px;
   border-bottom: 1.5px solid crimson;
-  
+  margin-bottom: 5px;
 
 }
 
-
-/*.container .form .inputfield .input:focus,
-.container .form .inputfield .textarea:focus,
-.container .form .inputfield .custom_select select:focus{
-  /*border: 1px solid crimson;
-}*/
 
 .container .form .inputfield p{
    font-size: 14px;
@@ -133,6 +121,7 @@ body{
   border: 1px solid crimson;
   display: block;
   position: relative;
+  margin-top: 2px;
 }
 .container .form .inputfield .check .checkmark:before{
   content: "";
@@ -204,100 +193,12 @@ body{
 
 
 
+/*//////Select2 ingredients//////*/
 
-
-
-
-
-
-
-/*////////Add ingredients////////*/
-.ingredient-container{
-  width: 100%;
-  height: 50px;
+.select2-selection__choice{
   padding: 5px;
-  margin-bottom: 5px;
-  justify-items: center;
-  outline: none;
-  border: none;
-  border-bottom: 1.5px solid crimson;
   font-size: 15px;
-  /*padding: 8px 10px;*/
-  border-radius: 0px;
-  transition: all 0.3s ease;
-  top: 5px;
 }
-.ingredient-container .input{
-  width: 48%;
-  float: right;
-  border: 1.5fpx solid crimson;
-  padding: 9px;
-  outline: none;
-  background-color: rgb(228, 228, 228);
- /* border-bottom: 1px solid crimson;*/
-  font-size: 15px;
-  /*padding: 8px 10px;*/
-  border-radius: 0px;
-  transition: all 0.3s ease;
-}
-.ingredient-container .button {
-  padding: 10px;
-  width: 3rem;
-  height: 2.5rem;
-  justify-items: center;
-  background:crimson;
-  color: #fff;
-  outline: none;
-  float: right;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 3px;
-  margin-bottom: 5px;
-  border: none;
-  text-align: center;
-}
-.ingredient-container .button:hover{
-background-color:#960303 ;
-
-
-}
-.ingredient-container .span{
-   width: 3rem;
-   float: right;
-   outline:none; 
-   background: crimson; 
-   height:2.5rem; 
-   padding:8px; 
-  justify-items: center;
-}
-.ingredient-container .img{
-height: 2rem;
-width: 2rem;
-}
-.ingredient-container ul li{
-
-  display: block;
-    padding: 0 .5rem;
-    margin-right: 3px;
-    white-space: nowrap;
-    color: #fff;
-    height: 2.6rem;
-    line-height: 2.6rem;
-    background-color: #8ac13e;
-    font-size: 18px;
-    font-size: 1.125rem;
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -321,8 +222,9 @@ ul li {
   cursor: pointer;
   position: relative;
   padding: 6px;
-  padding-left: 40px;
+ /* padding-left: 40px;*/
   background: #eee;
+  
   font-size: 15px;
   transition: 0.2s;
   top: 5px;
@@ -330,38 +232,18 @@ ul li {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+   padding-right: 30px; 
   user-select: none;
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
 ul li:nth-child(odd) {
-  background: #f9f9f9;
+  background: #f7a6a6;
 }
 
 /* Darker background-color on hover */
 ul li:hover {
   background: #ddd;
-}
-
-/* When clicked on, add a background color and strike out text */
-ul li.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
-}
-
-/* Add a "checked" mark when clicked on */
-ul li.checked::before {
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
 }
 
 /* Style the close button */
@@ -370,6 +252,7 @@ ul li.checked::before {
   right: 0;
   top: 0;
   padding: 10px;
+  margin-left: 10px;
 }
 
 .close:hover {
