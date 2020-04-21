@@ -283,19 +283,18 @@ input:checked + .slider:before {
 	/* margin-bottom: 8px; */
 }
 
-/* .icon {
+.icon {
 	text-align: left;
 	padding-left: 25px;
 	height: 20px;
 	top: 1px;
-	font-size: 20px;
-} */
+}
 
 .fa {
 	height: 20px;
 	width: 20px;
+	font-size:20px;
 	font-family: sans-serif;
-	font-size: 20px;
 }
 
 
@@ -333,6 +332,40 @@ div.scrollmenu {
 .carousel-indicators {
 	z-index: 1;
 }  
+
+/* .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  } */
+  .w3-modal2 {
+    /* position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms; */
+     /* visibility: hidden; 
+	opacity: 0;  */
+	display: 'none';
+  }
+  .w3-modal2:target {
+    /* visibility: visible;
+	opacity: 1; */
+	display:'block';
+  }
+
 .w3-container{
 	color: black;
 	border-radius: 20px;
@@ -341,15 +374,24 @@ div.scrollmenu {
 	padding: 0px;
 	text-align: center;
 	vertical-align: middle;
-	/* margin-top: 10px; */
-  }
+	margin-top: 10px;}
+	/* .popup {
+		margin: 70px auto;
+		padding: 20px;
+		background: #fff;
+		border-radius: 5px;
+		width: 30%;
+		position: relative;
+		transition: all 5s ease-in-out;
+	  } */
+  
 
 .img-modal {
 	width: 100%;
 	height: 250px;
 }  
 
-/* .img-card-slider {
+.img-card-slider {
 	height: 110px;
 	width: 244px;
 	border-radius: 18px 18px 0 0;
@@ -359,7 +401,7 @@ div.scrollmenu {
 .img-card-slider:hover {
 	transform: scale(1.2);
 	border-radius: 0;
-} */
+}
 .recipe-name {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: 20px;
@@ -516,7 +558,7 @@ button.w3-button {
 	border: 0px;
 }
 
-/* ul {
+ul {
 	list-style: none;
 	color: #fff;
 	font-size: 15px;
@@ -541,7 +583,7 @@ ul li {
 
 li i {
 	margin-right: 20px;
-} */
+}
 
 .social-media {
 	width: 100%;
@@ -619,7 +661,7 @@ li i {
 
 
 /* MODAL CSS */
-/* 
+
 .border2 {
 	height: 3px;
 	width: 40px;
@@ -664,15 +706,15 @@ li i {
 	margin-left: 20px;
 } */
 
-/* .w3-container ol {
+.w3-container ol {
 	list-style: none;
 	color: #ffcb7d;
 	text-align: left;
 	margin-left: 20px;
 	margin-top: 15px;
-  } */
+  }
   
-/* .w3-container  ol li {
+.w3-container  ol li {
 	font: bold 24pt helvetica, arial, sans-serif;
 	position: relative;
 	margin-bottom: 20px;
@@ -683,22 +725,23 @@ li i {
 	color: #555;
 	padding-left: 60px;
   }
-   */
-/* .w3-container li span {
+  
+.w3-container li span {
 	position: absolute;
 	line-height: 25px;
-  } 
+  }
 
 .icon-img1 {
 	height: 25px;
 	width: 25px;
-	
-}   */
+	/* margin-right: 10px; */
+	/* margin-bottom: 8px; */
+}  
 
 .container-search {
 	width: 100%;
 	height: 270px;
-	background-image: url(recipe-search.jpg);
+	background-image: url(../../recipe-search.jpg);
 	margin: 10px 0px;
 	background-size: cover;                   
     background-repeat: no-repeat;
@@ -804,215 +847,3 @@ input::-webkit-input-placeholder {
 .container-search form {
 	margin: 10px 0px;
 }
-
-/* card css start */
-.card{
-
-	font-family: 'Times New Roman', Times, serif, sans-serif;
-	font-size: 1.25rem;
-	display: inline-block;
-	color: black;
-	background-color: rgb(255, 255, 255);
-	text-align: center;
-	height: 220px;
-  	width: 250px;
-	text-decoration: none;
-	border-style: groove;
-	margin: 15px;
-	border-radius: 20px;
-  }
-  .card:hover {
-	background-color: #777777;
-	box-shadow: 5px;
-  }
-  .img-card-slider {
-	height: 110px;
-	width: 244px;
-	border-radius: 18px 18px 0 0;
-	transition: transform .2s;
-}  
-
-.img-card-slider:hover {
-	transform: scale(1.2);
-	border-radius: 0;
-}
-.recipe-name {
-	/* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    font-size: 1.25rem;
-    font-weight: bold;
-	text-align: center;
-}
-/* card body contain  */
-.card-body
-{
-    padding: 5px 5px 0px 5px;
-}
-
-/* view button  */
-a.w3-button {
-	border-radius: 20px;
-	/* background: black; */
-	background-color: black;
-	color: white;
-	height: 25px;
-	width: 65px;
-	font-size: 15px;
-	text-align: center;
-    padding: 0;
-    text-decoration: none;
-}
-/* icon css card body  */
-.icon {
-	float: left;
-	padding:0px 0px 5px 25px;
-	}
-	
-	.icon-img {
-		/* 15px */
-		/* 15px */
-		
-		height: 20px;
-		top: 1px;
-		height: 1rem; 
-		width: 1rem;
-		/* margin-right: 10px; */
-		/* margin-bottom: 8px; */
-	}
-	
-	.fa {
-		height: 20px;
-		width: 20px;
-		font-family: sans-serif;
-	}
-
-	.modalview{
-		padding-top: 50px;
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		
-		background: rgba(0, 0, 0, 0.7);
-		transition: opacity 500ms;
-		visibility: hidden;
-		opacity: 0;
-		z-index: 1;
-	  }
-	  .modalview:target{
-		visibility: visible;
-		opacity: 1;
-	
-	}
-	.w3-container
-	{
-		color: black;
-		border-radius: 20px;
-		white-space: normal;
-		
-		padding: 0px;
-		text-align: center;
-		vertical-align: middle;
-		
-	
-	}
-	
-	
-	.img-modal {
-		width: 100%;
-		height: 250px;
-	}  
-	.w3-container h1 {
-		font-family: "Times New Roman", Times, serif;
-		font-size: 30px;
-	}
-	
-	.w3-container h2 {
-		text-align: left;
-		margin-left: 15px;
-		font-family: "Times New Roman", Times, serif;
-		font-size: 20px;
-		margin-bottom: 5px;
-	}
-	.w3-container ul {
-		font-family: "Times New Roman", Times, serif;
-		font-size: 15px;
-		text-align: left;
-		color: black;
-		margin-left: 20px;
-		font-weight: bold;
-	} 
-	
-	ul {
-		list-style: none;
-		color: #fff;
-		font-size: 15px;
-		letter-spacing: 0.5px;	
-	 }
-	
-	ul a {
-		text-decoration: none;
-		outline: none;
-		color: #fff;
-		transition: 0.3s;
-	}
-	
-	ul a:hover {
-		color: #ff9800;
-	}
-	
-	ul li {
-		margin: 10px 0;
-		height: 25px;
-	}
-	
-	li i {
-		margin-right: 20px;
-	}
-	
-	.modal-ing-border {
-		height: 3px;
-		width: 40px;
-		background: #ff9800;
-		color: #ff9800;
-		background-color: #ff9800;
-		border: 0px;
-		margin-left: 20px;
-	}
-	.w3-container ol {
-		list-style: none;
-		color: #ffcb7d;
-		text-align: left;
-		margin-left: 20px;
-		margin-top: 15px;
-	  }
-	  
-	.w3-container  ol li {
-		font: bold 24pt helvetica, arial, sans-serif;
-		position: relative;
-		margin-bottom: 20px;
-	  }
-		
-	.w3-container li span {
-		position: absolute;
-		line-height: 25px;
-	  }
-	
-	  .w3-container li p {
-		font: 12pt helvetica, arial, sans-serif;
-		color: #555;
-		padding-left: 60px;
-	  }
-	  .modal-icon-img {
-	height: 25px;
-	width: 25px;
-	
-} 
-.micon {
-	align-items: stretch;
-/* margin-left: auto;
-margin-right: auto; */
-	/* padding:0px 0px 5px 25px; */
-	}
-
-/* card css end */

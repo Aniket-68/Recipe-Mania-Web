@@ -12,18 +12,19 @@
   integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="index.css">  
- 
+  <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
   <header>
 
-<!-- NAVABAR START -->
-    <div class="nav-wrapper" >
+    <!-- NAVABAR START -->
+    <div class="nav-wrapper">
 
       <!-- Veg or Nonveg slider in navbar -->
       <div class="center">
@@ -61,37 +62,37 @@
               <a href=""><i class="fab fa-facebook"></i></a>
               <a href=""><i class="fab fa-google-plus-square"></i></a>
             </div>
-          </div>    
+          </div>
         </div>
       </nav>
     </div>
   </header>
-<!-- NAVBAR END -->
+  <!-- NAVBAR END -->
 
-<!-- MAIN CONTENT -->
+  <!-- MAIN CONTENT -->
 
-<!-- CAROUSEL START -->
-<div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+  <!-- CAROUSEL START -->
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="recipe1.png" alt="Los Angeles" style="width:100%;">
-      </div>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="./assets/img/layouts/recipe1.png" alt="Los Angeles" style="width:100%;">
+        </div>
 
-      <div class="item">
-        <img src="recipe2.jpg" alt="Chicago" style="width:100%;">
-      </div>
-    
-      <div class="item">
-        <img src="recipe3.jpg" alt="New york" style="width:100%;">
+        <div class="item">
+          <img src="assets/img/layouts/recipe2.jpg" alt="Chicago" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="assets/img/layouts/recipe3.jpg" alt="New york" style="width:100%;">
         </div>
       </div>
 
@@ -111,333 +112,285 @@
 
 
   <!-- SEARCH BAR START -->
-    <div class="container-search">
-      <h3>What would you like to cook?</h3>
-      <form>
-          <input type="search" placeholder="Search">
-      </form>
+  <div class="container-search">
+    <h3>What would you like to cook?</h3>
+    <form>
+      <input type="search" placeholder="Search">
+    </form>
 
-      <h4>Popular Searches</h4>
-      <p class="pop-search"><a href="#"><button type="button">Chicken kadai</button></a></p>
-      <p class="pop-search"><a href="#"><button type="button">pav bhaji</button></a></p> <br>
-      <p class="pop-search"><a href="#"><button type="button">dum biryani</button></a></p>
-      <p class="pop-search"><a href="#"><button type="button">misal pav</button></a></p>
-      <p class="pop-search"><a href="#"><button type="button">ginger tea</button></a></p>
-      </div>        
+    <h4>Popular Searches</h4>
+    <p class="pop-search"><a href="#"><button type="button">Chicken kadai</button></a></p>
+    <p class="pop-search"><a href="#"><button type="button">pav bhaji</button></a></p> <br>
+    <p class="pop-search"><a href="#"><button type="button">dum biryani</button></a></p>
+    <p class="pop-search"><a href="#"><button type="button">misal pav</button></a></p>
+    <p class="pop-search"><a href="#"><button type="button">ginger tea</button></a></p>
+  </div>
 
   <!-- SEARCH BAR END -->
   <Section id="recipes">
     <h1>Taste Of The Month...</h1>
 
-  <!-- GRID SLIDER START -->
+    <!-- GRID SLIDER START -->
     <div class="scrollmenu" id="rec">
+      <!-- new sample card start -->
+      <div class="card">
+        <img src="./assets/img/contents/Achari_Paneer_Tikka.jpg" alt="" class="img-card-slider">
+        <div class="card-body">
+          <h5 class="recipe-name">Chicken Fried Rice</h5>
+          <a href="#41" class="w3-button">View</a>
+        </div>
+        <div class="icon">
+          <img class="icon-img" src="./assets/img/layouts/veg.jpg">
+          <i class="fa" style="font-size: 13px;">&#xf017;</i>
+        </div>
+      </div>
 
-      <!-- Sample card1 start -->
-      <!-- Sample card1 end -->
-
-    <!-- Sample card2 start -->
-    <div class="card1">
-      <img class="img-card-slider" src="F&B_logo.jpg">
-      <p class="recipe-name">RECIPE2</p>
-
-      <!-- Modal= VIEW button -->
-      <div class="w3-container">
-        <button onclick="document.getElementById('id02').style.display='block'" class="w3-button">VIEW</button>
-        <div id="id02" class="w3-modal">
-          <div class="w3-modal-content">
-            <div class="w3-container">
-              <span onclick="document.getElementById('id02').style.display='none'"
-                class="w3-button w3-display-topright">&times;</span>
-              <img class="img-modal" src="F&B_logo.jpg" alt="receipe1">
-              <h1>Recipe2</h1>
-              <h2>Ingredients</h2>
-              <div class="border2"></div>
-                <ul>
-                  <li>ingredient 1</li>
-                  <li>ingredient 2</li>
-                </ul>
-              <h2>Procedure</h2>  
-              <div class="border2"></div>
-              <ol>
-                <li><span>01</span><p>some procedure to make your recipe delicious</p></li>
-                <li><span>02</span><p>some procedure to make your recipe delicious</p></li>
-                <li><span>03</span><p>some procedure to make your recipe delicious</p></li>
-              </ol>   
-               
-            </div>
+      <div id="41" class="modalview">
+        <div class="w3-container w3-modal-content">
+          <a class="w3-button w3-display-topright" href="#">&times;</a>
+          <img class="img-modal" src="F&B_logo.jpg" alt="could">
+          <h1 class="recipe-name">Recipe2</h1>
+          <h2>Ingredients</h2>
+          <div class="modal-ing-border"></div>
+          <ul>
+            <li>ingredient 1</li>
+            <li>ingredient 2</li>
+          </ul>
+          <h2>Procedure</h2>
+          <div class="modal-ing-border"></div>
+          <ol>
+            <li><span>01</span>
+              <p>some procedure to make your recipe delicious</p>
+            </li>
+            <li><span>02</span>
+              <p>some procedure to make your recipe delicious</p>
+            </li>
+            <li><span>03</span>
+              <p>some procedure to make your recipe delicious</p>
+            </li>
+          </ol>
+          <div class="micon">
+            <img class="modal-icon-img" src="./assets/img/layouts/veg.jpg">
+            <i style="font-size: 20px;" class="fa">&#xf017;</i>
+            <i>xx min</i>
           </div>
         </div>
       </div>
-      
-      <!-- Icon div for recipe -->
-      <div class="icon">
-        <img class="icon-img" src="veg_icon.jpg">
-        <i style="font-size: 13px;" class="fas fa-heart"></i>     
-        <i style="font-size: 13px;" class="fa">&#xf017; 55mins</i>
-      </div>
+      <!-- new sample card  end  -->
     </div>
-    <!-- Sample card2 end -->
+    <!-- GRID SLIDER END -->
+  </Section>
+  <!-- cuisine SLIDER START -->
 
-<!-- sample card 9 start -->
-<div class="card">
-  <img src="./assets/img/contents/Achari_Paneer_Tikka.jpg" alt="" class="img-card-slider">
-  <div class="card-body">
-      <h5 class="recipe-name">Chicken Fried Rice</h5>
-      <a href="#41" class="w3-button">View</a>
-  </div>
-  <div class="icon">
-      <img class="icon-img" src="./assets/img/layouts/veg.jpg">
-      <i class="fa" style="font-size: 13px;">&#xf017;</i>
-  </div>
-</div>
+  <div class="scrollmenu">
 
-
-
-<div id="41" class="modalview" >
-  <div class="w3-container w3-modal-content">       
-      <a class="w3-button w3-display-topright" href="#">&times;</a>
-  <img class="img-modal" src="F&B_logo.jpg" alt="could">
-  <h1 class="recipe-name">Recipe2</h1>
-  <h2>Ingredients</h2>
-  <div class="modal-ing-border"></div>
-  <ul>
-    <li>ingredient 1</li>
-    <li>ingredient 2</li>
-  </ul>
-  <h2>Procedure</h2>  
-  <div class="modal-ing-border"></div>
-  <ol>
-    <li><span>01</span><p>some procedure to make your recipe delicious</p></li>
-    <li><span>02</span><p>some procedure to make your recipe delicious</p></li>
-    <li><span>03</span><p>some procedure to make your recipe delicious</p></li>
-  </ol> 
-  <div class="micon">  
-  <img class="modal-icon-img" src="veg_icon.jpg"> 
-  <!-- <i style="font-size: 20px;" class="fas fa-heart"></i>     -->
- <i style="font-size: 20px;" class="fa">&#xf017;</i> 
-  <i>xx min</i> 
-
-  </div>
-</div>
-</div>
-<!-- sample card 9 end  -->
-</div>
-
-
-
-<!-- GRID SLIDER END --> 
-<!-- </div> -->  </Section>
-<!-- cuisine SLIDER START -->
-
-<div class="scrollmenu">
-
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">INDIAN</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">SOUTH INDIAN</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">NORTH INDIAN</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">ITALIAN</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">MEXICAN</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">AFGHAN</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">BAKED</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">DRINKS</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">DESSERTS</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">BIRYANI</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">CHINESE</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">SNACKS</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">PASTAS</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">PIZZA</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">BREAKFAST</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">SAUCES</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">PICKLES</p>
-  </div>
-  
-  <div class="card2">
-    <img class="img-card-cuisine" src="F&B_logo.jpg">
-    <p class="recipe-name-cuisine">BBQ</p>
-  </div>
-  </div>
-  
-<!-- RECIPE CONTAINER1 START -->
-
-<div class="container-fluid">
-
-  <div class="row">
-
-    <div class="col-sm-3">  
-      <div class="card3">
-      <img class="img-card-cuisine1" src="F&B_logo.jpg">
-      <p class="recipe-name-cuisine">MOJITO</p>
-      </div>
-    </div>
-    
-    <div class="col-sm-3">  
-      <div class="card3">
-      <img class="img-card-cuisine1" src="F&B_logo.jpg">
-      <p class="recipe-name-cuisine">COLD COFFEE</p>
-      </div>
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">INDIAN</p>
     </div>
 
-    <div class="col-sm-3">  
-      <div class="card3">
-      <img class="img-card-cuisine1" src="F&B_logo.jpg">
-      <p class="recipe-name-cuisine">LIME JUICE</p>
-      </div>
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">SOUTH INDIAN</p>
     </div>
 
-    <div class="col-sm-3">  
-      <div class="card3">
-      <h1>DRINKS <i class="fas fa-cocktail"></i></h1>
-      <p>Hot and cold drinks..</p>
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">NORTH INDIAN</p>
+    </div>
+
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">ITALIAN</p>
+    </div>
+
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">MEXICAN</p>
+    </div>
+
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">AFGHAN</p>
+    </div>
+
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">BAKED</p>
+    </div>
+
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">DRINKS</p>
+    </div>
+
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">DESSERTS</p>
+    </div>
+
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">BIRYANI</p>
+    </div>
+
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">CHINESE</p>
+    </div>
+
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">SNACKS</p>
+    </div>
+
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">PASTAS</p>
+    </div>
+
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">PIZZA</p>
+    </div>
+
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">BREAKFAST</p>
+    </div>
+
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">SAUCES</p>
+    </div>
+
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">PICKLES</p>
+    </div>
+
+    <div class="card2">
+      <img class="img-card-cuisine" src="F&B_logo.jpg">
+      <p class="recipe-name-cuisine">BBQ</p>
+    </div>
+  </div>
+
+  <!-- RECIPE CONTAINER1 START -->
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-3">
+        <div class="card3">
+          <img class="img-card-cuisine1" src="F&B_logo.jpg">
+          <p class="recipe-name-cuisine">MOJITO</p>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card3">
+          <img class="img-card-cuisine1" src="F&B_logo.jpg">
+          <p class="recipe-name-cuisine">COLD COFFEE</p>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card3">
+          <img class="img-card-cuisine1" src="F&B_logo.jpg">
+          <p class="recipe-name-cuisine">LIME JUICE</p>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card3">
+          <h1>DRINKS <i class="fas fa-cocktail"></i></h1>
+          <p>Hot and cold drinks..</p>
+        </div>
       </div>
     </div>
   </div>
-</div>  
 
-<!-- RECIPE CONTAINER1 END -->
+  <!-- RECIPE CONTAINER1 END -->
 
-<!-- RECIPE CONTAINER2 START -->
+  <!-- RECIPE CONTAINER2 START -->
 
-<div class="container-fluid">
+  <div class="container-fluid">
 
-  <div class="row">
+    <div class="row">
 
-    <div class="col-sm-3">  
-      <div class="card3">
-      <h1>PIZZAS <i class="fas fa-pizza-slice"></i></h1>
-      <p>Hot and cold drinks..</p>
+      <div class="col-sm-3">
+        <div class="card3">
+          <h1>PIZZAS <i class="fas fa-pizza-slice"></i></h1>
+          <p>Hot and cold drinks..</p>
+        </div>
       </div>
-    </div>
 
-    <div class="col-sm-3">  
-      <div class="card3">
-      <img class="img-card-cuisine1" src="F&B_logo.jpg">
-      <p class="recipe-name-cuisine">MOJITO</p>
+      <div class="col-sm-3">
+        <div class="card3">
+          <img class="img-card-cuisine1" src="F&B_logo.jpg">
+          <p class="recipe-name-cuisine">MOJITO</p>
+        </div>
       </div>
-    </div>
-    
-    <div class="col-sm-3">  
-      <div class="card3">
-      <img class="img-card-cuisine1" src="F&B_logo.jpg">
-      <p class="recipe-name-cuisine">COLD COFFEE</p>
-      </div>
-    </div>
 
-    <div class="col-sm-3">  
-      <div class="card3">
-      <img class="img-card-cuisine1" src="F&B_logo.jpg">
-      <p class="recipe-name-cuisine">LIME JUICE</p>
+      <div class="col-sm-3">
+        <div class="card3">
+          <img class="img-card-cuisine1" src="F&B_logo.jpg">
+          <p class="recipe-name-cuisine">COLD COFFEE</p>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card3">
+          <img class="img-card-cuisine1" src="F&B_logo.jpg">
+          <p class="recipe-name-cuisine">LIME JUICE</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- RECIPE CONTAINER2 END -->
+  <!-- RECIPE CONTAINER2 END -->
 
-<!-- RECIPE CONTAINER3 START -->
+  <!-- RECIPE CONTAINER3 START -->
 
-<div class="container-fluid">
+  <div class="container-fluid">
 
-  <div class="row">
+    <div class="row">
 
-    <div class="col-sm-3">  
-      <div class="card3">
-      <img class="img-card-cuisine1" src="F&B_logo.jpg">
-      <p class="recipe-name-cuisine">MOJITO</p>
+      <div class="col-sm-3">
+        <div class="card3">
+          <img class="img-card-cuisine1" src="F&B_logo.jpg">
+          <p class="recipe-name-cuisine">MOJITO</p>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card3">
+          <img class="img-card-cuisine1" src="F&B_logo.jpg">
+          <p class="recipe-name-cuisine">COLD COFFEE</p>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card3">
+          <img class="img-card-cuisine1" src="F&B_logo.jpg">
+          <p class="recipe-name-cuisine">LIME JUICE</p>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card3">
+          <h1>BIRYANI <i class="fas fa-drumstick-bite"></i></h1>
+          <p>Hot and cold drinks..</p>
+        </div>
       </div>
     </div>
-    
-    <div class="col-sm-3">  
-      <div class="card3">
-      <img class="img-card-cuisine1" src="F&B_logo.jpg">
-      <p class="recipe-name-cuisine">COLD COFFEE</p>
-      </div>
-    </div>
+  </div>
 
-    <div class="col-sm-3">  
-      <div class="card3">
-      <img class="img-card-cuisine1" src="F&B_logo.jpg">
-      <p class="recipe-name-cuisine">LIME JUICE</p>
-      </div>
-    </div>
+  <!-- RECIPE CONTAINER3 END -->
 
-    <div class="col-sm-3">  
-      <div class="card3">
-      <h1>BIRYANI <i class="fas fa-drumstick-bite"></i></h1>
-      <p>Hot and cold drinks..</p>
-      </div>
-    </div>
-  </div>  
-</div>
-
-<!-- RECIPE CONTAINER3 END -->
-
-<!-- FOOTER START -->
-<!-- <footer class="footer">
+  <!-- FOOTER START -->
+  <!-- <footer class="footer">
  
  
 <div class="footer1">
@@ -451,55 +404,71 @@
 
 </footer> -->
 
-<div class="footer">
-  <div class="inner-footer">
+  <div class="footer">
+    <div class="inner-footer">
 
-    <div class="footer-items">
-      <h1>Food and Burps</h1>
-      <p>Food and Burps is here for all the foodies to help them make their favourite dishes.</p>
-    </div>
+      <div class="footer-items">
+        <h1>Food and Burps</h1>
+        <p>Food and Burps is here for all the foodies to help them make their favourite dishes.</p>
+      </div>
 
-    <div class="footer-items">
-      <h3>Quick Links</h3>
-      <div class="border1"></div>
+      <div class="footer-items">
+        <h3>Quick Links</h3>
+        <div class="border1"></div>
         <ul>
-          <a href=""><li>Home</li></a>
-          <a href=""><li>F&B Search</li></a>
-          <a href=""><li>Contact</li></a>
-          <a href=""><li>About</li></a>
+          <a href="">
+            <li>Home</li>
+          </a>
+          <a href="">
+            <li>F&B Search</li>
+          </a>
+          <a href="">
+            <li>Contact</li>
+          </a>
+          <a href="">
+            <li>About</li>
+          </a>
         </ul>
-    </div>
+      </div>
 
-    <div class="footer-items">
-      <h3>Recipes</h3>
-      <div class="border1"></div>
+      <div class="footer-items">
+        <h3>Recipes</h3>
+        <div class="border1"></div>
         <ul>
-          <a href=""><li>Indian</li></a>
-          <a href=""><li>Chinese</li></a>
-          <a href=""><li>Mexican</li></a>
-          <a href=""><li>Italian</li></a>
+          <a href="">
+            <li>Indian</li>
+          </a>
+          <a href="">
+            <li>Chinese</li>
+          </a>
+          <a href="">
+            <li>Mexican</li>
+          </a>
+          <a href="">
+            <li>Italian</li>
+          </a>
         </ul>
-    </div>
+      </div>
 
-    <div class="footer-items">
-      <h3>Contact us</h3>
-      <div class="border1"></div>
+      <div class="footer-items">
+        <h3>Contact us</h3>
+        <div class="border1"></div>
         <ul>
           <li><i class="fa fa-map-marker" aria-hidden="true"></i>XYZ, Montreal, CANADA</li>
           <li><i class="fa fa-phone" aria-hidden="true"></i>+919029537518</li>
           <li><i class="fa fa-envelope" aria-hidden="true"></i>foodandburps@gmail.com</li>
-        </ul> 
+        </ul>
         <div class="social-media">
           <a href=""><i class="fab fa-instagram"></i></a>
           <a href=""><i class="fab fa-facebook"></i></a>
           <a href=""><i class="fab fa-google-plus-square"></i></a>
-        </div> 
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Copyright &copy; Food and Burps 2020.
     </div>
   </div>
-  <div class="footer-bottom">
-    Copyright &copy; Food and Burps 2020.
-  </div>
-</div>
 
 
   <!-- JAVASCRIPT -->
