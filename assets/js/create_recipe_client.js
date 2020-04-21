@@ -1,20 +1,11 @@
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
 
 // Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
-    var div = this.parentElement;
+    // var div = this.parentElement;
+    var div = "inputfield";
     div.style.display = "none";
   }
 }
@@ -54,33 +45,4 @@ function newElement() {
   }
 }
 
-
-
-////////Adding button blocks to ingredients list/////////
-
-function myfunction() {
-  var list = document.createElement("li");
-  var inputValue = document.getElementById("Blockbtn").value;
-  var tx = document.createTextNode(inputValue);
-  list.appendChild(tx);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myblock").appendChild(list);
-  }
-  document.getElementById("Blockbtn").value = "";
-
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  list.appendChild(span);
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-}
 
